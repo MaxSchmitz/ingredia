@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from "./index.module.css";
 
 export default function Home() {
-  const [animalInput, setAnimalInput] = useState("");
+  const [foodInput, setFoodInput] = useState("");
   const [result, setResult] = useState();
 
   async function onSubmit(event) {
@@ -13,32 +13,35 @@ export default function Home() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ animal: animalInput }),
+      body: JSON.stringify({ food: foodInput }),
     });
     const data = await response.json();
     setResult(data.result);
-    setAnimalInput("");
+    setFoodInput("");
   }
 
   return (
     <div>
       <Head>
-        <title>OpenAI Quickstart</title>
-        <link rel="icon" href="/dog.png" />
+        <title>Ingredia</title>
+        <link rel="icon" href="/chef.png" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3066548685705175"
+     crossorigin="anonymous"></script>
       </Head>
 
       <main className={styles.main}>
-        <img src="/dog.png" className={styles.icon} />
-        <h3>Name my pet</h3>
+        <img src="/chef.png" className={styles.icon} />
+        <h3>Ingredia</h3>
+        <p>GPT-3 powered generic recipes</p>
         <form onSubmit={onSubmit}>
           <input
             type="text"
-            name="animal"
-            placeholder="Enter an animal"
-            value={animalInput}
-            onChange={(e) => setAnimalInput(e.target.value)}
+            name="food"
+            placeholder="Find a Recipe"
+            value={foodInput}
+            onChange={(e) => setFoodInput(e.target.value)}
           />
-          <input type="submit" value="Generate names" />
+          <input type="submit" value="Search Recipes" />
         </form>
         <div className={styles.result}>{result}</div>
       </main>
