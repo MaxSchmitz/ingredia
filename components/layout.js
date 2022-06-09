@@ -16,6 +16,13 @@ const Layout = (props) => (
 
     <footer className="flex h-24 w-full items-center justify-center border-t">
       <a
+        href="https://nextjs-blog-eight-xi-31.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Built by Max
+      </a>
+      <a className='ml-4'
         href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
         target="_blank"
         rel="noopener noreferrer"
