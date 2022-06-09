@@ -178,11 +178,11 @@ export default function Example() {
           </Popover.Group>
           {!user ? (
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="/login" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="/" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
               Sign in
             </a>
             <a
-              href="/login"
+              href="/"
               className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
             >
               Sign up
@@ -214,8 +214,8 @@ export default function Example() {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
+                    src="/chef.png"
+                    alt="Ingredia"
                   />
                 </div>
                 <div className="-mr-2">
@@ -242,9 +242,11 @@ export default function Example() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a href="https://github.com/MaxSchmitz/ingredia" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Ingredia Github
+                <Link href="/">
+                <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  Home
                 </a>
+                </Link>
                 {resources.map((item) => (
                   <a
                     key={item.name}
@@ -257,14 +259,14 @@ export default function Example() {
               </div>
               {!user ? (
                 <>
-                <Link href="/login">
+                <Link href="/">
                     <a
                     className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                     >
                     Sign up
                     </a>
                 </Link>
-                <Link href="/login">
+                <Link href="/">
                     <p className="mt-6 text-center text-base font-medium text-gray-500">
                     Existing customer?{' '}
                     <a className="text-indigo-600 hover:text-indigo-500">

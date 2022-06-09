@@ -45,11 +45,9 @@ const Login = () => {
   }
 
   return (
-
       <div>
         <Form errorMessage={errorMsg} onSubmit={handleSubmit} />
       </div>
-
   )
 }
 
