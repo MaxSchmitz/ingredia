@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@ctrl/react-adsense@^1.6.0":
+  "integrity" "sha512-FlekDNpaSkXpxVH9ic9p3fue3FTQl/Cwqv/DG8ZbN00XL6aujHsArCPo0ElnBBB3imGLtnL3q01L/PrB+5NahA=="
+  "resolved" "https://registry.npmjs.org/@ctrl/react-adsense/-/react-adsense-1.6.0.tgz"
+  "version" "1.6.0"
+  dependencies:
+    "tslib" "^2.4.0"
+
 "@hapi/b64@5.x.x":
   "integrity" "sha512-ngu0tSEmrezoiIaNGG6rRvKOUkUuDdf4XTPnONHGYfSGRmDqPZX5oJL6HAdKTo1UQHECbdB4OzhWrfgVppjHUw=="
   "resolved" "https://registry.npmjs.org/@hapi/b64/-/b64-5.0.0.tgz"
@@ -1861,6 +1868,11 @@
   "integrity" "sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o="
   "resolved" "https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz"
   "version" "0.0.3"
+
+"tslib@^2.4.0":
+  "integrity" "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ=="
+  "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
+  "version" "2.4.0"
 
 "tweetnacl-util@^0.15.0":
   "integrity" "sha512-RKJBIj8lySrShN4w6i/BonWp2Z/uxwC3h4y7xsRrpP59ZboCd0GpEVsOnMDYLMmKBpYhb5TgHzZXy7wTfYFBRw=="

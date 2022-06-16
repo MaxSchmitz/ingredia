@@ -1,16 +1,19 @@
 import Head from 'next/head'
 import Header from './header'
 import Example from './example'
+import {Adsense} from '@ctrl/react-adsense';
 
 const Layout = (props) => (
   <div>
     <Head>
       <title>Ingredia</title>
       <link rel="icon" href="/favicon.ico" />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3066548685705175"
+     crossOrigin="anonymous"></script>
     </Head>
     <Example />
 
-    <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
+    <main className="flex w-full flex-1 flex-col items-center justify-center px-8 text-center">
       <div className="container">{props.children}</div>
     </main>
 

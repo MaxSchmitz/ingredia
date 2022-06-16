@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ctrl/react-adsense": "^1.6.0",
     "@hapi/iron": "6.0.0",
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",

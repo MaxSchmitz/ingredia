@@ -53,7 +53,7 @@ const Recipe = () => {
         </>
       )}
       {lastFood && result ? (
-        <div className="max-w-prose container mx-auto p-8 mb-16 mt-8 shadow-2xl">
+        <div className="max-w-prose container mx-auto xs:min-w-full p-4 mb-16 mt-8 shadow-2xl">
           <h1 className="text-3xl">{capitalizeEveryWord(lastFood)} Recipe</h1>
           <div className="text-left whitespace-pre-wrap">{result}</div>
           <p className="text-center mt-6">
