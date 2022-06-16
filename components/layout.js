@@ -8,6 +8,7 @@ const Layout = (props) => (
     <Head>
       <title>Ingredia</title>
       <link rel="icon" href="/favicon.ico" />
+      <meta name="google-site-verification" content="LH7CVZLO-dzXx8SIskAXlHpaUuVuATDKPiaNvr2V8Sc" />
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3066548685705175"
      crossOrigin="anonymous"></script>
     </Head>
