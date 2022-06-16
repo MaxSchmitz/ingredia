@@ -2,6 +2,8 @@ import { useUser } from '../lib/hooks'
 import Layout from '../components/layout'
 import Recipe from './recipes'
 import Login from './login'
+import {Adsense} from '@ctrl/react-adsense';
+
 
 // import styles from "./index.module.css";
 
@@ -18,6 +20,13 @@ const Home = () => {
       {user ?         
         <>
           <Recipe />
+          <Adsense
+            client="ca-pub-3066548685705175"
+            slot="7983319611"
+            style={{ display: 'block' }}
+            layout="in-article"
+            format="fluid"
+          />
         </>:
         <div className="place-self-center">
           <Login />
