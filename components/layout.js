@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Header from './header'
-import Example from './example'
+import Navbar from './navbar'
 import {Adsense} from '@ctrl/react-adsense';
+import Affiliate from '../components/affiliatebanner';
+import AmazonBanner from '../components/amazonbanner';
+import Kitchen from './kitchen'
 
 const Layout = (props) => (
   <div>
@@ -9,14 +12,14 @@ const Layout = (props) => (
       <title>Ingredia</title>
       <link rel="icon" href="/favicon.ico" />
       <meta name="google-site-verification" content="LH7CVZLO-dzXx8SIskAXlHpaUuVuATDKPiaNvr2V8Sc" />
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3066548685705175"
-     crossOrigin="anonymous"></script>
+      <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=e399e594-27b6-4a04-8bda-3a31ef335700"></script>
     </Head>
-    <Example />
-
+    <Navbar />
+    
     <main className="flex w-full flex-1 flex-col items-center justify-center px-8 text-center">
       <div className="container">{props.children}</div>
     </main>
+    <Kitchen />
 
     <footer className="flex h-24 w-full items-center justify-center border-t">
       <a
