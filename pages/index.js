@@ -2,8 +2,7 @@ import { useUser } from '../lib/hooks'
 import Layout from '../components/layout'
 import Recipe from './recipes'
 import Login from './login'
-
-
+import Kitchen from '../components/kitchen'
 
 // import styles from "./index.module.css";
 
@@ -25,7 +24,6 @@ const Home = () => {
           <Login />
             <p>Enter your email and Click Login.</p>
             <p>You'll be redirected to Home where you can use GPT-3 to generate recipes.</p>
-
         </div>}
     </Layout>
   )

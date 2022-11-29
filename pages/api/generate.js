@@ -10,7 +10,7 @@ export default async function (req, res) {
   // Given a prompt, the model will return one or more predicted completions, and can also return the probabilities of alternative tokens at each position.
   // https://beta.openai.com/docs/api-reference/completions
   const completion = await openai.createCompletion({
-    model: "text-davinci-001", 
+    model: "text-davinci-003", 
     prompt: generatePrompt(req.body.food),
     temperature: 0.34,
     max_tokens: 250,

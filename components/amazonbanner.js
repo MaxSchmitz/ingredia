@@ -9,7 +9,7 @@ const AmazonBanner = () => {
                 <div className="alignleft">
                 <Helmet>
                     <script type="text/javascript">
-                        amzn_assoc_ad_type = "banner";
+                    amzn_assoc_ad_type = "banner";
                     amzn_assoc_marketplace = "amazon";
                     amzn_assoc_region = "US";
                     amzn_assoc_placement = "assoc_banner_placement_default";

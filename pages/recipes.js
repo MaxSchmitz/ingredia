@@ -1,5 +1,6 @@
 import { useUser } from '../lib/hooks'
 import { useState } from "react";
+import Banner from '../components/banner';
 import styles from "./index.module.css";
 
 const Recipe = () => {
@@ -53,15 +54,15 @@ const Recipe = () => {
         </>
       )}
       {lastFood && result ? (
-        <div className="max-w-prose container mx-auto xs:min-w-full p-4 mb-16 mt-8 shadow-2xl">
-          <h1 className="text-3xl">{capitalizeEveryWord(lastFood)} Recipe</h1>
-          <div className="text-left whitespace-pre-wrap">{result}</div>
-          <p className="text-center mt-6">
-            Share this recipe with your friends
-          </p>
-        </div>
+          <div className="w-full max-w-prose container mx-auto xs:min-w-full p-4 mb-16 mt-8 shadow-2xl">
+            <h1 className="text-3xl">{capitalizeEveryWord(lastFood)} Recipe</h1>
+            <div className="text-left whitespace-pre-wrap">{result}</div>
+            <p className="text-center mt-6">
+              Share this recipe with your friends
+            </p>
+          </div>
       ): (
-        <h1 className="text-3xl animate-bounce">{capitalizeEveryWord(lastFood)}</h1>
+        <h1 className="text-3xl animate-bounce my-2.5">{capitalizeEveryWord(lastFood)}</h1>
       )}
 
 
